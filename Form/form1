@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Form</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!--Carousel Wrapper-->
+        <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+          <!--Indicators-->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-2" data-slide-to="1"></li>
+            <li data-target="#carousel-example-2" data-slide-to="2"></li>
+          </ol>
+          <!--/.Indicators-->
+          <!--Slides-->
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <div class="view">
+                <img class="image-slide" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg" alt="First slide">
+                <div class="mask rgba-black-light"></div>
+              </div>
+              <div class="carousel-caption">
+                <h3 class="h3-responsive">Light mask</h3>
+                <p>First text</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+          <!--Mask color-->
+            <div class="view">
+              <img class="image-slide" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" alt="Second slide">
+              <div class="mask rgba-black-strong"></div>
+            </div>
+            <div class="carousel-caption">
+              <h3 class="h3-responsive">Strong mask</h3>
+              <p>Secondary text</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+          <!--Mask color-->
+            <div class="view">
+              <img class="image-slide" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg" alt="Third slide">
+              <div class="mask rgba-black-slight"></div>
+            </div>
+            <div class="carousel-caption">
+              <h3 class="h3-responsive">Slight mask</h3>
+              <p>Third text</p>
+            </div>
+          </div>
+        </div>
+        <!--/.Slides-->
+        <!--Controls-->
+        <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+        <!--/.Controls-->
+      </div>
+      <!--/.Carousel Wrapper-->
+    <div class="container">
+      <section>
+        <!-- join us Button -->
+        <div class="text-center">
+          <button type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1" class="btn btn-danger my-2">JOIN US</button>
+        </div>
+        <!-- end join us Button -->
+        <!-- Collapsible for join us form  -->
+        <div class="collapse" id="collapseExample1">
+          <!-- card body starts for join us form-->
+          <div class="card card-body">
+            <!-- Form join us -->
+            <form class="needs-validation" novalidate>
+              <div class="form-row">
+                <div class="col-md-4 mb-3">
+                  <label for="validationCustom01">First name</label>
+                  <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                  <div class="valid-feedback">
+                  Wrong First Name
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label for="validationCustom02">Last name</label>
+                  <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                  <div class="valid-feedback">
+                    Wrong Second Name
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="example-tel-input" class="col">Mobile No</label>
+                    <input class="form-control" type="tel" value="+91-987654321" id="example-tel-input">
+                    <div class="valid-feedback">
+                      Wrong Mobile No
+                    </div>
+                </div>
+              </div>
+              <div class="form-row">
+                  <label for="validationCustomUAddress">Address</label>
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="validationCustomAddress" aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                      Your Address
+                    </div>
+                  </div>
+              </div>
+
+              <div class="text-center">
+                <label for="TNC">I agree to "Terms and Conditions" :</label>
+              </div>
+
+              <div class="text-center">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                  Terms And Conditions
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Terms And Conditions</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        ...
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success">Proceed</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Submit Button -->
+              <div class="text-center">
+                <button type="Submit" class="btn btn-primary my-2">Submit</button>
+              </div>
+            </form>
+
+            <script>
+              // Example starter JavaScript for disabling form submissions if there are invalid fields
+              (function() {
+                'use strict';
+                window.addEventListener('load', function() {
+                  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                  var forms = document.getElementsByClassName('needs-validation');
+                  // Loop over them and prevent submission
+                  var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                      if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                      }
+                      form.classList.add('was-validated');
+                    }, false);
+                  });
+                }, false);
+              })();
+            </script>
+            </div>
+            <!-- card body ends for join us form-->
+        </div>
+        <!-- end of collapsible section -->
+      </section>
+
+      <section>
+        <!-- join us Button -->
+        <div class="text-center">
+          <button type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2" class="btn btn-danger my-2">DONATE US!</button>
+        </div>
+        <!-- Doante us form -->
+        <div class="collapse" id="collapseExample2">
+          <div class="card card-body">
+            <!-- Section: Team v.2 -->
+            <section class="team-section text-center my-5">
+            <!-- Section heading -->
+              <h2 class="h1-responsive font-weight-bold my-5">HOW YOU CAN DONATE...</h2>
+            <!-- Section description -->
+            <!-- Choice of Donation -->
+            <!-- Grid row -->
+              <div class="row text-center">
+            <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-5">
+                  <div class="avatar mx-auto">
+                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg" class="rounded z-depth-1-half" alt="Sample avatar">
+                  </div>
+                  <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                  </div>
+                </div>
+              <!-- Grid column -->
+              <div class="col-md-3 mb-md-0 mb-5">
+                <div class="avatar mx-auto">
+                  <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg" class="rounded z-depth-1-half" alt="Sample avatar">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+              </div>
+              <!-- Grid column -->
+              <div class="col-md-3 mb-md-0 mb-5">
+                <div class="avatar mx-auto">
+                  <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg" class="rounded z-depth-1-half" alt="Sample avatar">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+               </div>
+              </div>
+              <!-- Grid column -->
+              <div class="col-md-3 mb-md-0 mb-5">
+                <div class="avatar mx-auto">
+                  <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(31).jpg" class="rounded z-depth-1-half" alt="Sample avatar">
+                </div>
+                <div class="form-group form-check">
+                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                 <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+              </div>
+              <!-- Grid column -->
+            </div>
+          </section>
+          <!-- Section: Team v.2 -->
+            <form class="needs-validation" novalidate>
+              <div class="form-row">
+                <div class="col-md-4 mb-3">
+                  <label for="validationCustom01">First name</label>
+                  <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                  <div class="valid-feedback">
+                  Wrong First Name
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label for="validationCustom02">Last name</label>
+                  <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                  <div class="valid-feedback">
+                    Wrong Second Name
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="example-tel-input" class="col">Mobile No</label>
+                    <input class="form-control" type="tel" value="+91-987654321" id="example-tel-input">
+                    <div class="valid-feedback">
+                      Wrong Mobile No
+                    </div>
+                </div>
+              </div>
+              <div class="form-row">
+                  <label for="validationCustomUAddress">Address</label>
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="validationCustomAddress" aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                      Your Address
+                    </div>
+                  </div>
+              </div>
+              <!-- Camp visit buttons -->
+              <div class="text-center">
+                <label for="TNC">Do you want to visit any of our camp?</label>
+              </div>
+                <!-- Button trigger modal -->
+              <div >
+                <!-- form for donate us -->
+                <div class="form-row ">
+                  <div class="btn-group mr-4 ">
+                    <div class="text-center">
+                    <button type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3" class="btn btn-primary btn-md">YES</button>
+                    </div>
+                  </div>
+                  <div class="btn-group mr-4">
+                      <div class="text-center">
+                        <button type="button" class="btn btn-primary btn-md">NO</button>
+                      </div>
+                  </div>
+                </div>
+                <div class="mt-4">
+                  <!-- collapsible donate us form -->
+                  <div class="collapse" id="collapseExample3">
+                    <!-- Grid row -->
+                    <div class="row text-center">
+                      <!-- Grid column -->
+                      <div class="col-md-3 mb-md-0 mb-5">
+                        <div class="avatar mx-auto">
+                          <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg" class="rounded z-depth-1-half" alt="Sample avatar">
+                        </div>
+                        <div class="form-group form-check">
+                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                         <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                      </div>
+                      <!-- Grid column -->
+                      <div class="col-md-3 mb-md-0 mb-5">
+                        <div class="avatar mx-auto">
+                          <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg" class="rounded z-depth-1-half" alt="Sample avatar">
+                        </div>
+                        <div class="form-group form-check">
+                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                         <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                      </div>
+                      <!-- Grid column -->
+                      <div class="col-md-3 mb-md-0 mb-5">
+                        <div class="avatar mx-auto">
+                          <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg" class="rounded z-depth-1-half" alt="Sample avatar">
+                        </div>
+                        <div class="form-group form-check">
+                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                         <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                       </div>
+                      </div>
+                      <!-- Grid column -->
+                      <div class="col-md-3 mb-md-0 mb-5">
+                        <div class="avatar mx-auto">
+                          <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(31).jpg" class="rounded z-depth-1-half" alt="Sample avatar">
+                        </div>
+                        <div class="form-group form-check">
+                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                         <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row text-center mt-4">
+                      <!-- Grid column -->
+                      <div class="col-md-3 mb-md-0 mb-5">
+                        <div class="avatar mx-auto">
+                          <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg" class="rounded z-depth-1-half" alt="Sample avatar">
+                        </div>
+                        <div class="form-group form-check">
+                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                         <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                       </div>
+                      </div>
+                      <!-- Grid column -->
+                      <div class="col-md-3 mb-md-0 mb-5">
+                        <div class="avatar mx-auto">
+                          <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg" class="rounded z-depth-1-half" alt="Sample avatar">
+                        </div>
+                        <div class="form-group form-check">
+                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                         <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                       </div>
+                      </div>
+                      <!-- Grid column -->
+                      <div class="col-md-3 mb-md-0 mb-5">
+                        <div class="avatar mx-auto">
+                          <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg" class="rounded z-depth-1-half" alt="Sample avatar">
+                        </div>
+                        <div class="form-group form-check">
+                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                         <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                      </div>
+                      <!-- Grid column -->
+                      <div class="col-md-3 mb-md-0 mb-5">
+                        <div class="avatar mx-auto">
+                          <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(31).jpg" class="rounded z-depth-1-half" alt="Sample avatar">
+                        </div>
+                        <div class="form-group form-check">
+                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                         <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end of calapsible form -->
+                </div>
+              </div>
+
+
+
+
+
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Terms And Conditions</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        ...
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success">Proceed</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                <div class="text-center"><button type="Submit" class="btn btn-primary my-2">Submit</button></div>
+            </form>
+
+            <script>
+              // Example starter JavaScript for disabling form submissions if there are invalid fields
+              (function() {
+                'use strict';
+                window.addEventListener('load', function() {
+                  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                  var forms = document.getElementsByClassName('needs-validation');
+                  // Loop over them and prevent submission
+                  var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                      if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                      }
+                      form.classList.add('was-validated');
+                    }, false);
+                  });
+                }, false);
+              })();
+            </script>
+            </div>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>
